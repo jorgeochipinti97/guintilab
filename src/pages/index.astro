@@ -12,11 +12,13 @@ import Accordion from '../components/UI/Accordion.astro';
 	<HomeHeroSection />
 	<Container>
 		<section class="feature-card__section">
-			<h2 class="md:text-5xl text-2xl my-4">Elegí entre nuestra creación de plantillas.</h2>
-			<p class="mb-5">Trabajamos con la mejor tecnología y eficiencia del mercado.</p>
+			<h2 class="md:text-5xl text-2xl my-4">
+				Elegí entre nuestra creación de plantillas.
+			</h2>
+			<p class="mb-5">
+				Trabajamos con la mejor tecnología y eficiencia del mercado.
+			</p>
 			<div class="feature-card__grid">
-
-
 				<FeatureCardComoponent
 					href="https://nebulix.unfolding.io/shop"
 					title="E-commerce Nebulix"
@@ -61,7 +63,7 @@ import Accordion from '../components/UI/Accordion.astro';
 		</section>
 	</Container>
 	<Container>
-		<section class="feature-card__section" >
+		<section class="feature-card__section">
 			<h2 class="md:text-5xl text-2xl my-4">Últimos clientes.</h2>
 			<p class="mb-5">Descubre nuestros trabajos más recientes.</p>
 			<div class="feature-card__grid">
@@ -93,16 +95,26 @@ import Accordion from '../components/UI/Accordion.astro';
 			<h2 class="md:text-5xl text-2xl text-center">
 				¡Diseño y desarrollo web bonificado!
 			</h2>
-			<div
-			style="text-align:center; "
-			>
-				<h2 class="md:text-4xl text-2xl text-center mt-5 mb-5">Sin comisión por venta, solo abonás mensualmente </h2>
-
-				<p style="text-align:center ">
-					En virtud de los términos y condiciones acordados, el cliente adquiere
-					plena titularidad del domini.
-				</p>
-
+			<div style="">
+				<h2 class="md:text-4xl text-xl text-center mt-5 mb-5">
+					Sin comisión por venta, solo abonás mensualmente
+				</h2>
+				<div class="md:mx-5 mx-0 md:text-xl text-md font-light">
+					<p style="text-align:start   ">
+						- Portfolio Personal/CV: Desde <span class="font-bold">$1899</span>
+					</p>
+					<p style="text-align:start   ">
+						- Landing Page/Embudo de ventas: Desde <span class="font-bold"
+							>$9890</span
+						>
+					</p>
+					<p style="text-align:start   ">
+						- E-Commerce/Tienda Online: Desde <span class="font-bold"
+							>$19.990</span
+						>
+					</p>
+				</div>
+			</div>
 		</section>
 	</Container>
 	<Container>
@@ -128,14 +140,14 @@ import Accordion from '../components/UI/Accordion.astro';
 				<p style="margin-left:10px">Hosting</p>
 			</div>
 			<div>
-				<p class="md:ml-5 mb-4 font-light ml-2">
+				<p class="md:ml-5 mb-4  ml-2">
 					Alojamos tu página web para que esté 24/7 activa. Servidores ubicados
 					en EEUU.
 				</p>
 			</div>
 		</div>
 		<div
-		style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
 		>
 			<div style="display:flex;  justify-content:center; align-items:baseline">
 				<svg
@@ -150,13 +162,13 @@ import Accordion from '../components/UI/Accordion.astro';
 				<p style="margin-left:10px">Monitoreo 24hs</p>
 			</div>
 			<div>
-				<p class="md:ml-5 mb-4 font-light ml-2">
+				<p class="md:ml-5 mb-4  ml-2">
 					Monitoreamos la página web las 24 hs, para prevenir posibles caídas.
 				</p>
 			</div>
 		</div>
 		<div
-		style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
 		>
 			<div style="display:flex;  justify-content:center; align-items:baseline">
 				<svg
@@ -171,13 +183,13 @@ import Accordion from '../components/UI/Accordion.astro';
 				<p style="margin-left:10px">Mantenimiento</p>
 			</div>
 			<div>
-				<p class="md:ml-5 mb-4 font-light ml-2">
+				<p class="md:ml-5 mb-4  ml-2">
 					Actualizamos la página para mantener un rendimiento óptimo.
 				</p>
 			</div>
 		</div>
 		<div
-		style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
 		>
 			<div style="display:flex;  justify-content:center; align-items:baseline">
 				<svg
@@ -192,13 +204,13 @@ import Accordion from '../components/UI/Accordion.astro';
 				<p style="margin-left:10px">Soporte Técnico</p>
 			</div>
 			<div>
-				<p class="md:ml-5 mb-4 font-light ml-2">
+				<p class="md:ml-5 mb-4  ml-2">
 					En caso que surja algún inconveniente técnico, Guinti lo resolverá.
 				</p>
 			</div>
 		</div>
 		<div
-		style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
 		>
 			<div style="display:flex;  justify-content:center; align-items:baseline">
 				<svg
@@ -213,25 +225,36 @@ import Accordion from '../components/UI/Accordion.astro';
 				<p style="margin-left:10px">Seguridad del sitio web</p>
 			</div>
 			<div>
-				<p class="md:ml-5 mb-4 font-light ml-2">
+				<p class="md:ml-5 mb-4  ml-2">
 					Tu página web contará con certificación SSL.
 				</p>
 			</div>
 		</div>
-		<p class="mt-10 font-light text-center">
+		<p class="mt-10  text-center">
 			No pierdas más tiempo, construye tu presencia en línea ahora mismo.
 		</p>
 		<div style="display:flex; justify-content:center; ; ">
-			<img src="/assets/images/home/banner.jpeg" style="border-radius:10px; transform:scale(0.7)" alt="".>
+			<img
+				src="/assets/images/home/banner.jpeg"
+				style="border-radius:10px; transform:scale(0.7)"
+				alt=""
+				.
+			/>
 		</div>
 		<div class="flex justify-center">
-			<a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848b1e73f4018b2079c6dd0211">
-				<button class="px-4 mb-5 text-white py-2"  style="background-color:#009ee3;border-radius:9px; " >Paga con MercadoPago</button>
-				</a>
+			<a
+				href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848b1e73f4018b2079c6dd0211"
+			>
+				<button
+					class="px-4 mb-5 text-white py-2"
+					style="background-color:#009ee3;border-radius:9px; "
+					>Paga con MercadoPago</button
+				>
+			</a>
 		</div>
 	</Container>
 	<Container>
-		<Accordion/>
+		<Accordion />
 	</Container>
 </Layout>
 
