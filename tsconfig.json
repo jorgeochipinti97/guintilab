@@ -1,11 +1,14 @@
 {
-	"compilerOptions": {
-		"target": "ESNext",
-		"module": "ESNext",
-		"moduleResolution": "node",
-		"experimentalDecorators": true,
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
     "useDefineForClassFields": false,
-		// Add type definitions for our Vite runtime.
-		"types": ["vite/client"]
-	}
+    "types": [
+      "vite/client"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }

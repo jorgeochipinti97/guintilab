@@ -6,6 +6,7 @@ import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 import Footer from '../components/sections/Footer.astro';
+import { ButtonGroup } from '../components/react/ButtonGroup.jsx';
 
 export interface Props {
 	seo?: BaseHeadProps;
@@ -17,12 +18,23 @@ const { seo } = Astro.props as Props;
 ---
 
 <Layout {seo}>
-	<Header rightMenu navData={nav} slot="header">
-		<span slot="logo">
-			<Logo />
-		</span>
-		<Button slot="action-item" class="" href="https://wa.link/udn915">Contactanos</Button>
-	</Header>
+	<header slot="header" class="flex justify-between">
+		<Logo />
+
+		<ButtonGroup client:load />
+		<div class=" flex">
+			<div class="m-1 flex items-center">
+				<Button slot="action-item" class="" href="https://wa.link/udn915"
+					>Contactanos
+				</Button>
+			</div>
+		</div>
+	</header>
+	<div
+		class="fixed h-screen w-screen bg-white z-50  top-0 bottom-0 flex items-center justify-center incio "
+	>
+		<img src="/carga.gif" alt="" />
+	</div>
 	<div>
 		<slot />
 	</div>
@@ -34,3 +46,10 @@ const { seo } = Astro.props as Props;
 		<Logo slot="logo" />
 	</Footer>
 </Layout>
+<script>
+	import gsap from 'gsap';
+	import { Power1 } from 'gsap';
+	gsap && gsap.to('.incio', { opacity: 0, delay: 2 });
+	gsap &&
+		gsap.to('.incio', { display: 'none', delay: 3, ease: Power1.easeInOut });
+</script>
