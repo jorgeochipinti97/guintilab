@@ -6,6 +6,8 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 import Footer from '../components/sections/Footer.astro';
 import FeatureCardComoponent from '../components/UI/FeatureCardComponent.astro';
 import Accordion from '../components/UI/Accordion.astro';
+import { SliderParallax } from '../components/react/SliderParalax';
+import { SliderCoverflow } from '../components/react/SliderCoverflow';
 ---
 
 <Layout>
@@ -18,76 +20,18 @@ import Accordion from '../components/UI/Accordion.astro';
 			<p class="mb-5">
 				We work with the best technology and efficiency in the market.
 			</p>
-			<div class="feature-card__grid">
-				<FeatureCardComoponent
-					href="https://nebulix.unfolding.io/shop"
-					title="E-commerce Nebulix"
-					imgSrc="/assets/images/home/nublix.webp"
-				/>
-				<FeatureCardComoponent
-					href="https://demos.creative-tim.com/astro-ecommerce/landing/"
-					title="E-commerce Astro"
-					imgSrc="/assets/images/home/standar.png"
-				/>
-				<FeatureCardComoponent
-					href="https://astroship.web3templates.com/"
-					title="Landing Page Astro"
-					imgSrc="/assets/images/home/landing1.png"
-				/>
-				<FeatureCardComoponent
-					href="https://tailcastsite.netlify.app/"
-					title="Landing Page Tailcast"
-					imgSrc="/assets/images/home/tailcast.png"
-				/>
-				<FeatureCardComoponent
-					href="https://astro-multiverse.vercel.app/"
-					title="Fotografía & Art"
-					imgSrc="/assets/images/home/art.png"
-				/>
-				<FeatureCardComoponent
-					href="https://astrofy-template.netlify.app/"
-					title="Portfolio Personal"
-					imgSrc="/assets/images/home/portfolio.png"
-				/>
-				<FeatureCardComoponent
-					href="https://astro-moon-landing.netlify.app/"
-					title="Landing Astro Ship"
-					imgSrc="/assets/images/home/astrolanding.png"
-				/>
-				<FeatureCardComoponent
-					href="https://astro-theme-stone.vercel.app/"
-					title="Landing Stone"
-					imgSrc="/assets/images/home/stone.png"
-				/>
-			</div>
+			<SliderCoverflow client:load type="templates"/>
+			<!-- <div class="feature-card__grid">
+
+			</div> -->
 		</section>
 	</Container>
 	<Container>
 		<section class="feature-card__section">
 			<h2 class="md:text-5xl text-2xl my-4">Latest clients.</h2>
 			<p class="mb-5">Discover our most recent projects.</p>
-			<div class="feature-card__grid">
-				<FeatureCardComoponent
-					href="https://dublingroup.vercel.app/"
-					title="Dublin Group"
-					imgSrc="/assets/images/home/dublin.png"
-				/>
-				<FeatureCardComoponent
-					href="https://www.lazaro.tech/"
-					title="Lazaro Tech"
-					imgSrc="/assets/images/home/lazaro.png"
-				/>
-				<FeatureCardComoponent
-					href="https://royer.store/"
-					title="Royer Store"
-					imgSrc="/assets/images/home/royer.png"
-				/>
-				<FeatureCardComoponent
-					href="https://www.guinti.com/"
-					title="Guinti Travels"
-					imgSrc="/assets/images/home/travels.png"
-				/>
-			</div>
+			<SliderCoverflow client:load type="projects"/>
+
 		</section>
 	</Container>
 	<Container>
@@ -95,12 +39,11 @@ import Accordion from '../components/UI/Accordion.astro';
 			<h2 class="md:text-5xl text-2xl text-center">
 				Custom Web Design and Development!
 			</h2>
-		
 		</section>
 	</Container>
 	<Container>
 		<!-- <section class="feature-card__section" style="width:100vw"> -->
-		<div style="display:flex; justify-content:center">
+		<!-- <div style="display:flex; justify-content:center">
 			<div style="width:80vw; text-align:start" class="ml-4">
 				<h3 class="md:text-3xl text-2xl mb-5">What does the monthly fee include?				</h3>
 			</div>
@@ -214,11 +157,10 @@ import Accordion from '../components/UI/Accordion.astro';
 			Don't waste any more time, build your online presence right now.
 
 
-		</p>
+		</p> -->
 
-
+		<SliderParallax  client:load/>
 	</Container>
-
 </Layout>
 
 <style>
@@ -236,3 +178,4 @@ import Accordion from '../components/UI/Accordion.astro';
 		}
 	}
 </style>
+../components/react/SliderParalax
