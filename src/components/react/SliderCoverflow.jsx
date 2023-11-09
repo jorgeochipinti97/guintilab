@@ -30,7 +30,7 @@ export const SliderCoverflow = ({ type }) => {
             "imgSrc": "/assets/images/home/royer.png"
         },
         {
-            "href": "https://www.guinti.com/",
+            "href": "https://www.guintitravels.vercel.app/",
             "title": "Guinti Travels",
             "imgSrc": "/assets/images/home/travels.png"
         }

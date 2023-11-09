@@ -21,10 +21,10 @@ const { seo } = Astro.props as Props;
 	<header slot="header" class="flex justify-between">
 		<Logo />
 
-		<ButtonGroup client:load />
+		<!-- <ButtonGroup client:load /> -->
 		<div class=" flex">
 			<div class="m-1 flex items-center">
-				<Button slot="action-item" class="" href="https://wa.link/udn915"
+				<Button slot="action-item" class="text-xl" href="https://wa.link/udn915"
 					>Contact us
 				</Button>
 			</div>
@@ -38,13 +38,16 @@ const { seo } = Astro.props as Props;
 	<div>
 		<slot />
 	</div>
-	<Footer
+	<div style="    background:linear-gradient(16deg, #540CEC 44.2%, rgba(12, 196, 236, 0.90) 100%)">
+
+		<Footer
 		slot="footer"
 		background="var(--theme-surface-1)"
 		color="var(--theme-on-surface-1)"
-	>
+		>
 		<Logo slot="logo" />
 	</Footer>
+</div>
 </Layout>
 <script>
 	import gsap from 'gsap';

@@ -80,7 +80,7 @@ export const SliderParallax = () => {
                                     </div>
 
                                     <div data-swiper-parallax="-100">
-                                        <p className="text text-thin">
+                                        <p className="text text-thin mx-2 mt-2 text-center ">
                                             {e.description}
                                         </p>
                                     </div>
