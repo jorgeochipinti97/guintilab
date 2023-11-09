@@ -97,7 +97,7 @@ export const SliderCoverflow = ({ type }) => {
                         modifier: 1,
                         slideShadows: true,
                     }}
-                    pagination={true}
+
                     modules={[EffectCoverflow, Pagination]}
                     className="mySwiper"
                 >
