@@ -8,6 +8,7 @@ import FeatureCardComoponent from '../components/UI/FeatureCardComponent.astro';
 import Accordion from '../components/UI/Accordion.astro';
 import { SliderParallax } from '../components/react/SliderParalax';
 import { SliderCoverflow } from '../components/react/SliderCoverflow';
+import { SliderCube } from '../components/react/SliderCube';
 ---
 
 <Layout>
@@ -20,7 +21,7 @@ import { SliderCoverflow } from '../components/react/SliderCoverflow';
 			<p class="mb-5">
 				We work with the best technology and efficiency in the market.
 			</p>
-			<SliderCoverflow client:load type="templates"/>
+			<SliderCoverflow client:load type="templates" />
 			<!-- <div class="feature-card__grid">
 
 			</div> -->
@@ -30,136 +31,46 @@ import { SliderCoverflow } from '../components/react/SliderCoverflow';
 		<section class="feature-card__section">
 			<h2 class="md:text-5xl text-2xl my-4">Latest clients.</h2>
 			<p class="mb-5">Discover our most recent projects.</p>
-			<SliderCoverflow client:load type="projects"/>
-
+			<SliderCoverflow client:load type="projects" />
 		</section>
 	</Container>
 	<Container>
-		<section class="feature-card__section">
-			<h2 class="md:text-5xl text-2xl text-center">
-				Custom Web Design and Development!
+		<section class="feature-card__section flex flex-col">
+			<h2 class="md:text-5xl text-2xl ">Custom Web Design and Development!</h2>
+			<p class=" mt-5 ">
+				No sales commission, you only pay monthly adjusted to your budget for
+				maintenance and support.
+			</p>
+
+			<SliderCube client:load />
+			<h2 class=" mt-10  md:text-5xl text-2xl">
+				Wait no more to have your website!
 			</h2>
+			<p class=" mt-5 ">Our service provides:</p>
 		</section>
 	</Container>
 	<Container>
-		<!-- <section class="feature-card__section" style="width:100vw"> -->
-		<!-- <div style="display:flex; justify-content:center">
-			<div style="width:80vw; text-align:start" class="ml-4">
-				<h3 class="md:text-3xl text-2xl mb-5">What does the monthly fee include?				</h3>
-			</div>
-		</div>
-		<div
-			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
-		>
-			<div style="display:flex;  justify-content:center; align-items:baseline">
-				<svg
-					version="1.1"
-					xmlns="http://www.w3.org/2000/svg"
-					width="10"
-					height="10"
-					viewBox="0 0 120 120"
-				>
-					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
-				</svg>
-				<p style="margin-left:10px">Hosting</p>
-			</div>
-			<div>
-				<p class="md:ml-5 mb-4  ml-2">
-					We host your website to keep it active 24/7. Servers located in the USA.
+		<SliderParallax client:load />
+	</Container>
+	<Container>
+		<section class="flex  justify-around my-10 flex-wrap">
+			<div class="md:w-6/12 w-full">
+				<h2 class="font-bold text-4xl mb-5">About us</h2>
+				<p class=" text-justify">
+					We are a team of passionate entrepreneurs who share a common vision:
+					to transform ideas into digital solutions. Our journey begins with a
+					creative designer and an innovative web programmer, united by a
+					passion for technology and a desire to embark on this entrepreneurial
+					adventure.<br />
+					<br /> We strive to merge visual aesthetics with technological functionality,
+					creating exceptional digital experiences. We believe in the power of collaboration
+					and creativity to drive success in an increasingly digital world.
 				</p>
 			</div>
-		</div>
-		<div
-			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
-		>
-			<div style="display:flex;  justify-content:center; align-items:baseline">
-				<svg
-					version="1.1"
-					xmlns="http://www.w3.org/2000/svg"
-					width="10"
-					height="10"
-					viewBox="0 0 120 120"
-				>
-					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
-				</svg>
-				<p style="margin-left:10px">24-hour Monitoring				</p>
+			<div class="md:w-4/12 rounded-xl w-full mt-5 md:mt-0">
+				<img src="/leonesreal.jpeg" alt="" class="w-full rounded-xl" />
 			</div>
-			<div>
-				<p class="md:ml-5 mb-4  ml-2">
-					We monitor the website 24 hours a day to prevent potential downtimes.				</p>
-			</div>
-		</div>
-		<div
-			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
-		>
-			<div style="display:flex;  justify-content:center; align-items:baseline">
-				<svg
-					version="1.1"
-					xmlns="http://www.w3.org/2000/svg"
-					width="10"
-					height="10"
-					viewBox="0 0 120 120"
-				>
-					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
-				</svg>
-				<p style="margin-left:10px">Maintenance</p>
-			</div>
-			<div>
-				<p class="md:ml-5 mb-4  ml-2">
-					We update the site to maintain optimal performance.
-
-				</p>
-			</div>
-		</div>
-		<div
-			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
-		>
-			<div style="display:flex;  justify-content:center; align-items:baseline">
-				<svg
-					version="1.1"
-					xmlns="http://www.w3.org/2000/svg"
-					width="10"
-					height="10"
-					viewBox="0 0 120 120"
-				>
-					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
-				</svg>
-				<p style="margin-left:10px">Technical Support				</p>
-			</div>
-			<div>
-				<p class="md:ml-5 mb-4  ml-2">
-					Should any technical issues arise, Guinti will resolve them.				</p>
-			</div>
-		</div>
-		<div
-			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
-		>
-			<div style="display:flex;  justify-content:center; align-items:baseline">
-				<svg
-					version="1.1"
-					xmlns="http://www.w3.org/2000/svg"
-					width="10"
-					height="10"
-					viewBox="0 0 120 120"
-				>
-					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
-				</svg>
-				<p style="margin-left:10px">Website Security
-
-				</p>
-			</div>
-			<div>
-				<p class="md:ml-5 mb-4  ml-2">
-					Your website will be secured with an SSL certificate.				</p>
-			</div>
-		</div>
-		<p class="mt-10  text-center text-semibold text-4xl mb-5">
-			Don't waste any more time, build your online presence right now.
-
-
-		</p> -->
-
-		<SliderParallax  client:load/>
+		</section>
 	</Container>
 </Layout>
 

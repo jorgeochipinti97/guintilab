@@ -68,3 +68,7 @@ pre .language-id {
   .feature-card__title {
 	font-family: var(--theme-font-family-sans);
   }
+
+  .cardcube{
+	background-color: var(--theme-footer-bg);
+  }

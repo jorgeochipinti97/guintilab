@@ -38,16 +38,14 @@ const { seo } = Astro.props as Props;
 	<div>
 		<slot />
 	</div>
-	<div style="    background:linear-gradient(16deg, #540CEC 44.2%, rgba(12, 196, 236, 0.90) 100%)">
 
-		<Footer
+	<Footer
 		slot="footer"
 		background="var(--theme-surface-1)"
 		color="var(--theme-on-surface-1)"
-		>
+	>
 		<Logo slot="logo" />
 	</Footer>
-</div>
 </Layout>
 <script>
 	import gsap from 'gsap';
